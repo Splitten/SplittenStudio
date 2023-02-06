@@ -1,3 +1,8 @@
+#region Using directives
+using System;
+using System.Reflection;
+using System.Runtime.InteropServices;
+#endregion
 [assembly: AssemblyTitle("SplittenStudio")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
