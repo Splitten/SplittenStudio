@@ -1,7 +1,7 @@
-C:\Users\mwb51\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\bin\Debug\SplittenStudio.exe
-C:\Users\mwb51\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\bin\Debug\SplittenStudio.pdb
-C:\Users\mwb51\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.csprojResolveAssemblyReference.cache
-C:\Users\mwb51\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.exe
-C:\Users\mwb51\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.pdb
-C:\Users\mwb51\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.MainForm.resources
-C:\Users\mwb51\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.csproj.GenerateResource.Cache
+C:\Users\OftenGuy\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\bin\Debug\SplittenStudio.exe
+C:\Users\OftenGuy\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\bin\Debug\SplittenStudio.pdb
+C:\Users\OftenGUy\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.csprojResolveAssemblyReference.cache
+C:\Users\OftenGuy\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.exe
+C:\Users\OftenGuy\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.pdb
+C:\Users\OftenGuy\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.MainForm.resources
+C:\Users\OftenGuy\OneDrive\Documents\SharpDevelop Projects\SplittenStudio\SplittenStudio\obj\Debug\SplittenStudio.csproj.GenerateResource.Cache
