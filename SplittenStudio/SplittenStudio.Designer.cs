@@ -7,13 +7,10 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
  
-namespace SplittenStudio
-{
-	partial class MainForm
-	{
+namespace SplittenStudio {
+	partial class MainForm {
 		private System.ComponentModel.IContainer components = null;
-		protected override void Dispose(bool disposing)
-		{
+		protected override void Dispose(bool disposing) {
 			if (disposing) {
 				if (components != null) {
 					components.Dispose();
@@ -21,8 +18,7 @@ namespace SplittenStudio
 			}
 			base.Dispose(disposing);
 		}
-		private void InitializeComponent()
-		{
+		private void InitializeComponent() {
 			this.SuspendLayout();
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
