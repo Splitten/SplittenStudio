@@ -11,17 +11,12 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-namespace SplittenStudio
-{
-  public partial class MainForm : Form
-  {
-    public MainForm()
-    {
+namespace SplittenStudio {
+  public partial class MainForm : Form {
+    public MainForm() {
       InitializeComponent();
       this.Text = "Splitten Studio";
     }
-    void MainFormLoad(object sender, EventArgs eventArgs)
-    {
-    }
+    void MainFormLoad(object sender, EventArgs eventArgs) {}
   }
 }
