@@ -41,7 +41,7 @@ namespace SplittenStudio {
       maximizeButton.Size = new Size(50, 35);
       maximizeButton.Click += new EventHandler(maximizeButtonClicked);
       maximizeButton.Cursor = Cursors.Hand;
-      ToolTip maximizeTooltip = new ToolTip();
+      ToolTip maximizeToolTip = new ToolTip();
       maximizeToolTip.AutoPopDelay = 5000;
       maximizeToolTip.InitialDelay = 1000;
       maximizeToolTip.ReshowDelay = 500;
