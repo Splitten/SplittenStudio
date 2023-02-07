@@ -53,7 +53,7 @@ namespace SplittenStudio {
       exitButton.Location = new Point(1215, 0);
       exitButton.Size = new Size(50, 35);
       exitButton.Click += new EventHandler(exitButtonClicked);
-      exitButton.Click = Cursors.Hand;
+      exitButton.Cursor = Cursors.Hand;
       ToolTip exitToolTip = new ToolTip();
       exitToolTip.AutoPopDelay = 5000;
       exitToolTip.InitialDelay = 1000;
