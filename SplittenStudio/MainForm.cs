@@ -17,6 +17,8 @@ namespace SplittenStudio {
       InitializeComponent();
       this.Text = "Splitten Studio";
       this.StartPosition = FormStartPosition.CenterScreen;
+      this.Width = 1280;
+      this.Height = 720;
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
   }
