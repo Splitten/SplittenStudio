@@ -16,6 +16,7 @@ namespace MainForm {
     public MainForm() {
       InitializeComponent();
       this.Text = "Splitten Studio";
+      this.StartPosition = FormStartPosition.CenterScreen;
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
   }
