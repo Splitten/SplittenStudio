@@ -19,6 +19,7 @@ namespace SplittenStudio {
       this.StartPosition = FormStartPosition.CenterScreen;
       this.Width = 1280;
       this.Height = 720;
+      this.BackColor = Color.FromArgb(150, 150, 150);
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
   }
