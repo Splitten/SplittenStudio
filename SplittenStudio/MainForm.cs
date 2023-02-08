@@ -29,6 +29,8 @@ namespace SplittenStudio {
       minimizeButton.Click += new EventHandler(minimizeButtonClicked);
       minimizeButton.Cursor = Cursors.Hand;
       minimizeButton.BackColor = Color.FromArgb(100, 100, 100);
+      minimizeButton.ForeColor = Color.FromArgb(200, 200, 200);
+      minimizeButton.Font = new Font(minimizeButton.Font.Name, minimizeButton.Font.Size, FontStyle.Bold);
       ToolTip minimizeToolTip = new ToolTip();
       minimizeToolTip.AutoPopDelay = 5000;
       minimizeToolTip.InitialDelay = 1000;
@@ -43,6 +45,8 @@ namespace SplittenStudio {
       maximizeButton.Click += new EventHandler(maximizeButtonClicked);
       maximizeButton.Cursor = Cursors.Hand;
       maximizeButton.BackColor = Color.FromArgb(100, 100, 100);
+      maximizeButton.ForeColor = Color.FromArgb(200, 200, 200);
+      maximizeButton.Font = new Font(maximizeButton.Font.Name, maximizeButton.Font.Size, FontStyle.Bold);
       ToolTip maximizeToolTip = new ToolTip();
       maximizeToolTip.AutoPopDelay = 5000;
       maximizeToolTip.InitialDelay = 1000;
@@ -57,6 +61,8 @@ namespace SplittenStudio {
       exitButton.Click += new EventHandler(exitButtonClicked);
       exitButton.Cursor = Cursors.Hand;
       exitButton.BackColor = Color.FromArgb(100, 100, 100);
+      exitButton.ForeColor = Color.FromArgb(200, 200, 200);
+      exitButton.Font = new Font(exitButton.Font.Name, exitButton.Font.Size, FontStyle.Bold);
       ToolTip exitToolTip = new ToolTip();
       exitToolTip.AutoPopDelay = 5000;
       exitToolTip.InitialDelay = 1000;
