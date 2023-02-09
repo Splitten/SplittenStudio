@@ -58,24 +58,24 @@ namespace SplittenStudio {
       maximizeToolTip.ReshowDelay = 500;
       maximizeToolTip.ShowAlways = true;
       maximizeToolTip.SetToolTip(maximizeButton, "Maximize");
-      TitleBarButton exitButton = new TitleBarButton();
-      this.Controls.Add(exitButton);
-      exitButton.Text = "X";
-      exitButton.Location = new Point(1225, 0);
-      exitButton.Size = new Size(30, 30);
-      exitButton.Click += new EventHandler(exitButtonClicked);
-      exitButton.Cursor = Cursors.Hand;
-      exitButton.BackColor = Color.FromArgb(100, 100, 100);
-      exitButton.ForeColor = Color.FromArgb(200, 200, 200);
-      exitButton.Font = new Font(exitButton.Font.Name, exitButton.Font.Size, FontStyle.Bold);
-      exitButton.FlatStyle = FlatStyle.Flat;
-      exitButton.FlatAppearance.BorderSize = 0;
-      ToolTip exitToolTip = new ToolTip();
-      exitToolTip.AutoPopDelay = 5000;
-      exitToolTip.InitialDelay = 1000;
-      exitToolTip.ReshowDelay = 500;
-      exitToolTip.ShowAlways = true;
-      exitToolTip.SetToolTip(exitButton, "Close");
+      TitleBarButton closeButton = new TitleBarButton();
+      this.Controls.Add(closeButton);
+      closeButton.Text = "X";
+      closeButton.Location = new Point(1225, 0);
+      closeButton.Size = new Size(30, 30);
+      closeButton.Click += new EventHandler(closeButtonClicked);
+      closeButton.Cursor = Cursors.Hand;
+      closeButton.BackColor = Color.FromArgb(100, 100, 100);
+      closeButton.ForeColor = Color.FromArgb(200, 200, 200);
+      closeButton.Font = new Font(closeButton.Font.Name, closeButton.Font.Size, FontStyle.Bold);
+      closeButton.FlatStyle = FlatStyle.Flat;
+      closeButton.FlatAppearance.BorderSize = 0;
+      ToolTip closeToolTip = new ToolTip();
+      closeToolTip.AutoPopDelay = 5000;
+      closeToolTip.InitialDelay = 1000;
+      closeToolTip.ReshowDelay = 500;
+      closeToolTip.ShowAlways = true;
+      closeToolTip.SetToolTip(closeButton, "Close");
       // Menu
       MenuItemButton file = new MenuItemButton();
       this.Controls.Add(file);
@@ -104,7 +104,7 @@ namespace SplittenStudio {
     void maximizeButtonClicked(object sender, EventArgs eventArgs) {
         this.WindowState = FormWindowState.Maximized;
     }
-    void exitButtonClicked(object sender, EventArgs eventArgs) {
+    void closeButtonClicked(object sender, EventArgs eventArgs) {
         var button = sender as Button;
         if(button.Text == "X") {
             this.Close();
