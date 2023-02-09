@@ -96,6 +96,15 @@ namespace SplittenStudio {
       editToolTip.InitialDelay = 1000;
       editToolTip.ShowAlways = true;
       editToolTip.SetToolTip(edit, "Edit");
+      MenuItemButton view = new MenuItemButton();
+      this.Controls.Add(view);
+      view.Text = "VIEW";
+      view.Location = new Point(140, -5);
+      ToolTip viewToolTip = new ToolTip();
+      viewToolTip.AutoPopDelay = 5000;
+      viewToolTip.InitialDelay = 1000;
+      viewToolTip.ShowAlways = true;
+      viewToolTip.SetToolTip(view, "View");
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
     void minimizeButtonClicked(object sender, EventArgs eventArgs) {
