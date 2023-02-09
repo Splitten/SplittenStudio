@@ -21,6 +21,7 @@ namespace SplittenStudio {
       this.Height = 720;
       this.BackColor = Color.FromArgb(150, 150, 150);
       // this.FormBorderStyle = Style.Windows.Forms.FormBorderStyle.NONE;
+      // Title Bar Buttons
       TitleBarButton minimizeButton = new TitleBarButton();
       this.Controls.Add(minimizeButton);
       minimizeButton.Text = "-";
@@ -75,6 +76,26 @@ namespace SplittenStudio {
       exitToolTip.ReshowDelay = 500;
       exitToolTip.ShowAlways = true;
       exitToolTip.SetToolTip(exitButton, "Close");
+      // Menu
+      MenuItemButton file = new MenuItemButton();
+      this.Controls.Add(file);
+      file.Text = "FILE";
+      file.Location = new Point(0, -5);
+      ToolTip fileToolTip = new ToolTip();
+      fileToolTip.AutoPopDelay = 5000;
+      fileToolTip.InitialDelay = 1000;
+      fileToolTip.ReshowDelay = 500;
+      fileToolTip.ShowAlways = true;
+      fileToolTip.SetToolTip(file, "File");
+      MenuItemButton edit = new MenuItemButton();
+      this.Controls.Add(edit);
+      edit.Text = "EDIT";
+      edit.Location = new Point(70, -5);
+      ToolTip editToolTip = new ToolTip();
+      editToolTip.AutoPopDelay = 5000;
+      editToolTip.InitialDelay = 1000;
+      editToolTip.ShowAlways = true;
+      editToolTip.SetToolTip(edit, "Edit");
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
     void minimizeButtonClicked(object sender, EventArgs eventArgs) {
