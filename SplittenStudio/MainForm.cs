@@ -21,7 +21,7 @@ namespace SplittenStudio {
       this.Height = 720;
       this.BackColor = Color.FromArgb(150, 150, 150);
       // this.FormBorderStyle = Style.Windows.Forms.FormBorderStyle.NONE;
-      Button minimizeButton = new Button();
+      TitleBarButton minimizeButton = new TitleBarButton();
       this.Controls.Add(minimizeButton);
       minimizeButton.Text = "-";
       minimizeButton.Location = new Point(1135, 0);
@@ -31,13 +31,15 @@ namespace SplittenStudio {
       minimizeButton.BackColor = Color.FromArgb(100, 100, 100);
       minimizeButton.ForeColor = Color.FromArgb(200, 200, 200);
       minimizeButton.Font = new Font(minimizeButton.Font.Name, minimizeButton.Font.Size, FontStyle.Bold);
+      minimizeButton.FlatStyle = FlatStyle.Flat;
+      minimizeButton.FlatAppearance.BorderSize = 0;
       ToolTip minimizeToolTip = new ToolTip();
       minimizeToolTip.AutoPopDelay = 5000;
       minimizeToolTip.InitialDelay = 1000;
       minimizeToolTip.ReshowDelay = 500;
       minimizeToolTip.ShowAlways = true;
       minimizeToolTip.SetToolTip(minimizeButton, "Minimize");
-      Button maximizeButton = new Button();
+      TitleBarButton maximizeButton = new TitleBarButton();
       this.Controls.Add(maximizeButton);
       maximizeButton.Text = "+";
       maximizeButton.Location = new Point(1180, 0);
@@ -47,13 +49,15 @@ namespace SplittenStudio {
       maximizeButton.BackColor = Color.FromArgb(100, 100, 100);
       maximizeButton.ForeColor = Color.FromArgb(200, 200, 200);
       maximizeButton.Font = new Font(maximizeButton.Font.Name, maximizeButton.Font.Size, FontStyle.Bold);
+      maximizeButton.FlatStyle = FlatStyle.Flat;
+      maximizeButton.FlatAppearance.BorderSize = 0;
       ToolTip maximizeToolTip = new ToolTip();
       maximizeToolTip.AutoPopDelay = 5000;
       maximizeToolTip.InitialDelay = 1000;
       maximizeToolTip.ReshowDelay = 500;
       maximizeToolTip.ShowAlways = true;
       maximizeToolTip.SetToolTip(maximizeButton, "Maximize");
-      Button exitButton = new Button();
+      TitleBarButton exitButton = new TitleBarButton();
       this.Controls.Add(exitButton);
       exitButton.Text = "X";
       exitButton.Location = new Point(1225, 0);
@@ -63,12 +67,14 @@ namespace SplittenStudio {
       exitButton.BackColor = Color.FromArgb(100, 100, 100);
       exitButton.ForeColor = Color.FromArgb(200, 200, 200);
       exitButton.Font = new Font(exitButton.Font.Name, exitButton.Font.Size, FontStyle.Bold);
+      exitButton.FlatStyle = FlatStyle.Flat;
+      exitButton.FlatAppearance.BorderSize = 0;
       ToolTip exitToolTip = new ToolTip();
       exitToolTip.AutoPopDelay = 5000;
       exitToolTip.InitialDelay = 1000;
       exitToolTip.ReshowDelay = 500;
       exitToolTip.ShowAlways = true;
-      exitToolTip.SetToolTip(exitButton, "Exit");
+      exitToolTip.SetToolTip(exitButton, "Close");
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
     void minimizeButtonClicked(object sender, EventArgs eventArgs) {
