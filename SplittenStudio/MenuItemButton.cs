@@ -12,15 +12,15 @@
  namespace SplittenStudio {
     public class MenuItemButton : Button {
         public MenuItemButton() {
-            this.BackColor = System.Drawing.Color.FromArgb(130, 130, 130);
-            this.ForeColor = System.Drawing.Color.White;
-            this.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(100, 100, 100);
-            this.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(120, 120, 120);
+            this.BackColor = Color.FromArgb(130, 130, 130);
+            this.ForeColor = Color.White;
+            this.FlatAppearance.MouseDownBackColor = Color.FromArgb(100, 100, 100);
+            this.FlatAppearance.MouseOverBackColor = Color.FromArgb(120, 120, 120);
             this.FlatAppearance.BorderSize = 0;
             this.FlatStyle = FlatStyle.Flat;
-            this.Font = new System.Drawing.Font("Harvest", 15, System.Drawing.FontStyle.Regular);
+            this.Font = new Font("Harvest", 15, FontStyle.Regular);
             this.Cursor = Cursors.Hand;
-            this.Size = new System.Drawing.Size(70, 40);
+            this.Size = new Size(70, 40);
         }
     }
  }
