@@ -12,7 +12,7 @@ using System.Drawing;
 using System.Windows.Forms;
 namespace SplittenStudio {
 	partial class MainForm {
-		private SIContainer components = null;
+		private IContainer components = null;
 		protected override void Dispose(bool disposing) {
 			if(disposing) {
 				if(components != null) {
