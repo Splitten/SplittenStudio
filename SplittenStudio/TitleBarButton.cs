@@ -7,6 +7,7 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
  using System;
+ using System.Drawing;
  using System.Drawing.Drawing2D;
  using System.Windows.Forms;
  namespace SplittenStudio {
@@ -14,7 +15,7 @@
         protected override void OnPaint(PaintEventArgs e) {
             var graphicsPath = new GraphicsPath();
             graphicsPath.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
-            this.Region = new System.Drawing.Region(graphicsPath);
+            this.Region = new Region(graphicsPath);
             base.OnPaint(e);
        }
     }
