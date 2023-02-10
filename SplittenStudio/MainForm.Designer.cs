@@ -6,12 +6,16 @@
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
+using System;
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
 namespace SplittenStudio {
 	partial class MainForm {
-		private System.ComponentModel.IContainer components = null;
+		private SIContainer components = null;
 		protected override void Dispose(bool disposing) {
-			if (disposing) {
-				if (components != null) {
+			if(disposing) {
+				if(components != null) {
 					components.Dispose();
 				}
 			}
@@ -20,12 +24,13 @@ namespace SplittenStudio {
 		#region
 		private void InitializeComponent() {
 			this.SuspendLayout();
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.AutoScaleDimensions = new SizeF(6F, 13F);
+			this.AutoScaleMode = AutoScaleMode.Font;
+			this.ClientSize = new Size(800, 450);
 			this.Name = "SplittenStudio";
 			this.Text = "Splitten Studio";
-			this.Load += new System.EventHandler(this.MainFormLoad);
+			this.TransparencyKey = Color.Gray;
+			this.Load += new EventHandler(this.MainFormLoad);
 			this.ResumeLayout(false);
 		}
 		#endregion
