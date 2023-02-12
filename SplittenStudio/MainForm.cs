@@ -14,6 +14,7 @@ namespace SplittenStudio {
   public partial class MainForm : Form {
     public MainForm() {
       InitializeComponent();
+      // this.Icon = new System.Drawing.Icon("SplittenLogo.ico", 100, 100); <- DOES NOT FRICKING WORK
       this.Text = "Splitten Studio";
       this.StartPosition = FormStartPosition.CenterScreen;
       this.Width = 1280;
@@ -24,15 +25,16 @@ namespace SplittenStudio {
       TitleBarButton minimizeButton = new TitleBarButton();
       this.Controls.Add(minimizeButton);
       minimizeButton.Text = "-";
-      minimizeButton.Location = new Point(1135, 0);
+      minimizeButton.Location = new Point(1135, 5);
       minimizeButton.Size = new Size(30, 30);
-      minimizeButton.Click += new EventHandler(minimizeButtonClicked);
+      minimizeButton.Click += new EventHandler(MinimizeButtonClicked);
       minimizeButton.Cursor = Cursors.Hand;
       minimizeButton.BackColor = Color.FromArgb(100, 100, 100);
       minimizeButton.ForeColor = Color.FromArgb(200, 200, 200);
       minimizeButton.Font = new Font(minimizeButton.Font.Name, minimizeButton.Font.Size, FontStyle.Bold);
       minimizeButton.FlatStyle = FlatStyle.Flat;
       minimizeButton.FlatAppearance.BorderSize = 0;
+      minimizeButton.Padding = new Padding(5);
       ToolTip minimizeToolTip = new ToolTip();
       minimizeToolTip.AutoPopDelay = 5000;
       minimizeToolTip.InitialDelay = 1000;
@@ -42,15 +44,16 @@ namespace SplittenStudio {
       TitleBarButton maximizeButton = new TitleBarButton();
       this.Controls.Add(maximizeButton);
       maximizeButton.Text = "+";
-      maximizeButton.Location = new Point(1180, 0);
+      maximizeButton.Location = new Point(1180, 5);
       maximizeButton.Size = new Size(30, 30);
-      maximizeButton.Click += new EventHandler(maximizeButtonClicked);
+      maximizeButton.Click += new EventHandler(MaximizeButtonClicked);
       maximizeButton.Cursor = Cursors.Hand;
       maximizeButton.BackColor = Color.FromArgb(100, 100, 100);
       maximizeButton.ForeColor = Color.FromArgb(200, 200, 200);
       maximizeButton.Font = new Font(maximizeButton.Font.Name, maximizeButton.Font.Size, FontStyle.Bold);
       maximizeButton.FlatStyle = FlatStyle.Flat;
       maximizeButton.FlatAppearance.BorderSize = 0;
+      maximizeButton.Padding = new Padding(5);
       ToolTip maximizeToolTip = new ToolTip();
       maximizeToolTip.AutoPopDelay = 5000;
       maximizeToolTip.InitialDelay = 1000;
@@ -60,15 +63,16 @@ namespace SplittenStudio {
       TitleBarButton closeButton = new TitleBarButton();
       this.Controls.Add(closeButton);
       closeButton.Text = "X";
-      closeButton.Location = new Point(1225, 0);
+      closeButton.Location = new Point(1225, 5);
       closeButton.Size = new Size(30, 30);
-      closeButton.Click += new EventHandler(closeButtonClicked);
+      closeButton.Click += new EventHandler(CloseButtonClicked);
       closeButton.Cursor = Cursors.Hand;
       closeButton.BackColor = Color.FromArgb(100, 100, 100);
       closeButton.ForeColor = Color.FromArgb(200, 200, 200);
       closeButton.Font = new Font(closeButton.Font.Name, closeButton.Font.Size, FontStyle.Bold);
       closeButton.FlatStyle = FlatStyle.Flat;
       closeButton.FlatAppearance.BorderSize = 0;
+      closeButton.Padding = new Padding(5);
       ToolTip closeToolTip = new ToolTip();
       closeToolTip.AutoPopDelay = 5000;
       closeToolTip.InitialDelay = 1000;
@@ -104,6 +108,8 @@ namespace SplittenStudio {
       viewToolTip.InitialDelay = 1000;
       viewToolTip.ShowAlways = true;
       viewToolTip.SetToolTip(view, "View");
+      // Logo
+      // Image Logo = Image.FromFile("@SplittenLogo.jpg");
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
     void minimizeButtonClicked(object sender, EventArgs eventArgs) {
