@@ -109,16 +109,16 @@ namespace SplittenStudio {
       viewToolTip.ShowAlways = true;
       viewToolTip.SetToolTip(view, "View");
       // Logo
-      // Image Logo = Image.FromFile("@SplittenLogo.jpg");
+      // Image Logo = Image.FromFile("@SplittenLogo.jpg"); <- ALSO DOES NOT WORK RIGHT NOW WHY ME TELL ME TELL ME TRUE
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
-    void minimizeButtonClicked(object sender, EventArgs eventArgs) {
+    void MinimizeButtonClicked(object sender, EventArgs eventArgs) {
         this.WindowState = FormWindowState.Minimized;
     }
-    void maximizeButtonClicked(object sender, EventArgs eventArgs) {
+    void MaximizeButtonClicked(object sender, EventArgs eventArgs) {
         this.WindowState = FormWindowState.Maximized;
     }
-    void closeButtonClicked(object sender, EventArgs eventArgs) {
+    void CloseButtonClicked(object sender, EventArgs eventArgs) {
         var button = sender as Button;
         if(button.Text == "X") {
             this.Close();
