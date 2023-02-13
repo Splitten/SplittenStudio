@@ -116,33 +116,6 @@ namespace SplittenStudio {
       viewToolTip.ShowAlways = true;
       viewToolTip.SetToolTip(view, "View");
       // Logo
-      // LogoButton logoButton1 = new LogoButton();
-      // this.Controls.Add(logoButton1);
-      // logoButton1.Location = new Point(1000, 5);
-      // logoButton1.Size = new Size(25, 25);
-      // logoButton1.BackColor = Color.FromArgb(230, 230, 230);
-      // logoButton1.ForeColor = Color.FromArgb(230, 230, 230);
-      //
-      // LogoButton logoButton2 = new LogoButton();
-      // this.Controls.Add(logoButton2);
-      // logoButton2.Location = new Point(975, 17);
-      // logoButton2.Size = new Size(25, 25);
-      // logoButton2.BackColor = Color.FromArgb(192, 192, 192);
-      // logoButton2.ForeColor = Color.FromArgb(192, 192, 192);
-      //
-      // LogoButton logoButton3 = new LogoButton();
-      // this.Controls.Add(logoButton3);
-      // logoButton3.Location = new Point(1025, 17);
-      // logoButton3.Size = new Size(25, 25);
-      // logoButton3.BackColor = Color.FromArgb(165, 165, 165);
-      // logoButton3.ForeColor = Color.FromArgb(165, 165, 165);
-      //
-      // LogoButton logoButton4 = new LogoButton();
-      // this.Controls.Add(logoButton4);
-      // logoButton4.Location = new Point(1000, 30);
-      // logoButton4.Size = new Size(25, 25);
-      // logoButton4.BackColor = Color.FromArgb(128, 128, 128);
-      // logoButton4.ForeColor = Color.FromArgb(128, 128, 128);
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
     void MinimizeButtonClicked(object sender, EventArgs eventArgs) {
