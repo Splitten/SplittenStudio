@@ -116,6 +116,19 @@ namespace SplittenStudio {
       viewToolTip.ShowAlways = true;
       viewToolTip.SetToolTip(view, "View");
       // Logo
+      Label logo = new Label();
+      this.Controls.Add(logo);
+      logo.BackColor = Color.Transparent;
+      logo.ForeColor = Color.FromArgb(222, 222, 222);
+      logo.Text = "SPLITTEN";
+      logo.Font = new Font("Impact", 16, FontStyle.Italic);
+      logo.Location = new Point(600, 10);
+      logo.Cursor = Cursors.Hand;
+      Tooltip logoToolTip = new ToolTip();
+      logoToolTip.AutoPopDelay = 5000;
+      logoToolTip.InitialDelay = 1000;
+      logoToolTip.ShowAlways = true;
+      logoToolTip.SetToolTip(logo, "Splitten");
     }
     void MainFormLoad(object sender, EventArgs eventArgs) {}
     void MinimizeButtonClicked(object sender, EventArgs eventArgs) {
