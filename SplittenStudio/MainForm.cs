@@ -116,7 +116,33 @@ namespace SplittenStudio {
       viewToolTip.ShowAlways = true;
       viewToolTip.SetToolTip(view, "View");
       // Logo
-      /* Square */
+      /* Buttons */
+      LogoButton logoButton1 = new LogoButton();
+      this.Controls.Add(logoButton1);
+      logoButton1.LeftColor = Color.FromArgb(180, 180, 180);
+      logoButton1.RightColor = Color.FromArgb(235, 235, 235);
+      logoButton1.Width = 25;
+      logoButton1.Height = 25;
+      logoButton1.Location = new Point(560, 10);
+      logoButton1.Cursor = Cursors.Hand;
+      ToolTip logoButton1ToolTip = new ToolTip();
+      logoButton1ToolTip.AutoPopDelay = 5000;
+      logoButton1ToolTip.InitialDelay = 1000;
+      logoButton1ToolTip.ShowAlways = true;
+      logoButton1ToolTip.SetToolTip(logoButton1, "Splitten");
+      LogoButton logoButton2 = new LogoButton();
+      this.Controls.Add(logoButton2);
+      logoButton2.LeftColor = Color.FromArgb(235, 235, 235);
+      logoButton2.RightColor = Color.FromArgb(180, 180, 180);
+      logoButton2.Width = 25;
+      logoButton2.Height = 25;
+      logoButton2.Location = new Point(710, 10);
+      logoButton2.Cursor = Cursors.Hand;
+      ToolTip logoButton2ToolTip = new ToolTip();
+      logoButton2ToolTip.AutoPopDelay = 5000;
+      logoButton2ToolTip.InitialDelay = 1000;
+      logoButton2ToolTip.ShowAlways = true;
+      logoButton2ToolTip.SetToolTip(logoButton2, "Splitten");
       /* Text */
       Label logoText = new Label();
       this.Controls.Add(logoText);
